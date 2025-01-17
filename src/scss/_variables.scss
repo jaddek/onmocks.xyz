@@ -1,0 +1,15 @@
+
+
+$fa-font-path: '../../node_modules/@fortawesome/fontawesome-free/webfonts';
+
+$primary: #ff5733;
+$font-family-sans-serif: 'Helvetica Neue', sans-serif;
+
+$accordion-button-active-bg: #17a2b8;
+$accordion-button-active-color: #ffffff;
+
+$accordion-icon-color-dark: red;
+$accordion-icon-active-color-dark: red;
+
+$accordion-button-icon-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='#{$accordion-icon-color-dark}' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>");
+$accordion-button-active-icon-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='#{$accordion-icon-active-color-dark}' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>");

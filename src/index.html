@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Project</title>
+</head>
+<body data-bs-theme="dark">
+
+<div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+        <div class="col col-sm-6 text-center text-lg-start">
+            <h1 class="display-4 lh-1 mb-3">on.mocks</h1>
+            <p class="col-lg-10 fs-4 lead">Simplifies API testing by providing powerful tools to quickly mock and
+                simulate
+                your endpoints. Whether you're developing or integrating, create realistic mock data in minutes and
+                accelerate your workflow.</p>
+        </div>
+        <div class="col col-sm-6 mx-auto col border rounded-3 bg-body-tertiary">
+            <div class="py-5">
+                <p>curl -X GET https://onmocks.xyz/json/employees<!--?filter[id][in]=101,102--></p>
+                <div id="json-container">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<main>
+    <div class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom">Mock Your API with Efficiency</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-light-subtle d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="fa-solid fa-people-arrows"></i>
+                </div>
+                <div>
+                    <h3 class="fs-2 text-body-emphasis">Unlimited Requests</h3>
+                    <p>Bring your ideas to life without limitations! Our service offers unlimited requests, so you can
+                        prototype, test, and refine your designs freely—without ever worrying about hitting a cap. Focus
+                        on creativity and innovation, and leave the restrictions behind.</p>
+
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-light-subtle d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <div>
+                    <h3 class="fs-2 text-body-emphasis">Multiple Schemes</h3>
+                    <p>Access a range of predefined, structured data schemas designed for different types of entities,
+                        such as users, transactions, products, and more. Each schema is tailored to ensure that you get
+                        consistent, reliable data for specific use cases, without the need to manually configure or
+                        modify requests.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-light-subtle d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="fa-solid fa-box"></i>
+                </div>
+                <div>
+                    <h3 class="fs-2 text-body-emphasis">Multiple Data Formats</h3>
+                    <p>Get the data you need in the format that works best for you. We support a wide range of output
+                        formats, including JSON, XML, ProtoBuf, MessagePack, Avro, CBOR, YAML, Thrift, FlatBuffers, ORC,
+                        BSON, and CSV. Whether you’re working with web APIs, big data tools, or specific integration
+                        requirements.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5" id="guide">
+        <h2 class="pb-2 border-bottom">Guide</h2>
+        <div class="h-100 p-5 rounded-3">
+            <h4>Resources</h4>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseCountries" aria-expanded="true"
+                                aria-controls="collapseCountries">
+                            Countries
+                        </button>
+                    </h2>
+                    <div id="collapseCountries" class="accordion-collapse collapse show"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>CRUD Operations for Countries</strong>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    GET /api/countries
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request" data-method="GET"
+                                            data-url="/api/countries">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    POST /api/countries
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request"
+                                            data-method="POST" data-url="/api/countries">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    GET /api/countries/{id}
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request" data-method="GET"
+                                            data-url="/api/countries/{id}">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    PUT /api/countries/{id}
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request" data-method="PUT"
+                                            data-url="/api/countries/{id}">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    DELETE /api/countries/{id}
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request"
+                                            data-method="DELETE" data-url="/api/countries/{id}">Copy cURL
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseLanguages" aria-expanded="false"
+                                aria-controls="collapseLanguages">
+                            Languages
+                        </button>
+                    </h2>
+                    <div id="collapseLanguages" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>CRUD Operations for Languages</strong>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    GET /api/languages
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request" data-method="GET"
+                                            data-url="/api/languages">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    POST /api/languages
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request"
+                                            data-method="POST" data-url="/api/languages">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    GET /api/languages/{id}
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request" data-method="GET"
+                                            data-url="/api/languages/{id}">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    PUT /api/languages/{id}
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request" data-method="PUT"
+                                            data-url="/api/languages/{id}">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    DELETE /api/languages/{id}
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request"
+                                            data-method="DELETE" data-url="/api/languages/{id}">Copy cURL
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTimezones" aria-expanded="false"
+                                aria-controls="collapseTimezones">
+                            Timezones
+                        </button>
+                    </h2>
+                    <div id="collapseTimezones" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>CRUD Operations for Timezones</strong>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    GET /api/timezones
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request" data-method="GET"
+                                            data-url="/api/timezones">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    POST /api/timezones
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request"
+                                            data-method="POST" data-url="/api/timezones">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    GET /api/timezones/{id}
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request" data-method="GET"
+                                            data-url="/api/timezones/{id}">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    PUT /api/timezones/{id}
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request" data-method="PUT"
+                                            data-url="/api/timezones/{id}">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    DELETE /api/timezones/{id}
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request"
+                                            data-method="DELETE" data-url="/api/timezones/{id}">Copy cURL
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseCapitals" aria-expanded="false"
+                                aria-controls="collapseCapitals">
+                            Capitals
+                        </button>
+                    </h2>
+                    <div id="collapseCapitals" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>CRUD Operations for Capitals</strong>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    GET /api/capitals
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request" data-method="GET"
+                                            data-url="/api/capitals">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    POST /api/capitals
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request"
+                                            data-method="POST" data-url="/api/capitals">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    GET /api/capitals/{id}
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request" data-method="GET"
+                                            data-url="/api/capitals/{id}">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    PUT /api/capitals/{id}
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request" data-method="PUT"
+                                            data-url="/api/capitals/{id}">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    DELETE /api/capitals/{id}
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request"
+                                            data-method="DELETE" data-url="/api/capitals/{id}">Copy cURL
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseUsers" aria-expanded="false" aria-controls="collapseUsers">
+                            Users
+                        </button>
+                    </h2>
+                    <div id="collapseUsers" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>CRUD Operations for Users</strong>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    GET /api/users
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request" data-method="GET"
+                                            data-url="/api/users">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    POST /api/users
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request"
+                                            data-method="POST" data-url="/api/users">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    GET /api/users/{id}
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request" data-method="GET"
+                                            data-url="/api/users/{id}">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    PUT /api/users/{id}
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request" data-method="PUT"
+                                            data-url="/api/users/{id}">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    DELETE /api/users/{id}
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request"
+                                            data-method="DELETE" data-url="/api/users/{id}">Copy cURL
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTransactions" aria-expanded="false"
+                                aria-controls="collapseTransactions">
+                            Transactions
+                        </button>
+                    </h2>
+                    <div id="collapseTransactions" class="accordion-collapse collapse"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>CRUD Operations for Transactions</strong>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    GET /api/transactions
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request" data-method="GET"
+                                            data-url="/api/transactions">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    POST /api/transactions
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request"
+                                            data-method="POST" data-url="/api/transactions">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    GET /api/transactions/{id}
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request" data-method="GET"
+                                            data-url="/api/transactions/{id}">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    PUT /api/transactions/{id}
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request" data-method="PUT"
+                                            data-url="/api/transactions/{id}">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    DELETE /api/transactions/{id}
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request"
+                                            data-method="DELETE" data-url="/api/transactions/{id}">Copy cURL
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsePosts" aria-expanded="false" aria-controls="collapsePosts">
+                            Posts
+                        </button>
+                    </h2>
+                    <div id="collapsePosts" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>CRUD Operations for Posts</strong>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    GET /api/posts
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request" data-method="GET"
+                                            data-url="/api/posts">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    POST /api/posts
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request"
+                                            data-method="POST" data-url="/api/posts">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    GET /api/posts/{id}
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request" data-method="GET"
+                                            data-url="/api/posts/{id}">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    PUT /api/posts/{id}
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request" data-method="PUT"
+                                            data-url="/api/posts/{id}">Copy cURL
+                                    </button>
+                                </li>
+                                <li class="list-group-item">
+                                    DELETE /api/posts/{id}
+                                    <button class="btn btn-sm btn-outline-info ms-2 copy-curl-request"
+                                            data-method="DELETE" data-url="/api/posts/{id}">Copy cURL
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">(on.mocks)</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#guide">Guide</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<footer class="footer mt-auto py-3 bg-body-tertiary">
+    <div class="container">
+        <footer class="py-3 my-4">
+            <p class="footer-text text-center nav border-bottom pb-3 mb-3">The <a class="link-info" href="https://onmocks.xyz">onmocks.xyz</a> project was created by <a
+                    href="https://github.com/jaddek" target="_blank" class="link-info">@jaddek</a> for fun and exploration, thoughtfully designed and implemented using ❤️ 🧠 👐 and some  🪄.</p>
+            <p class="text-center text-body-secondary">© 2025 onmocks.xyz</p>
+        </footer>
+    </div>
+</footer>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3" id="toastContainer">
+    <div id="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header bg-success">
+            <strong class="me-auto">Success</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            cURL command copied successfully!
+        </div>
+    </div>
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

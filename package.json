@@ -1,0 +1,31 @@
+{
+  "name": "onmocks.xyz",
+  "version": "1.0.0",
+  "source": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [
+    "mocking",
+    "web",
+    "demo"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "description": "A demo site for mocking APIs.",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@parcel/compressor-brotli": "^2.13.3",
+    "@parcel/compressor-gzip": "^2.13.3",
+    "bootstrap": "^5.3.3",
+    "highlight.js": "^11.11.1",
+    "jquery": "^3.7.1",
+    "sass": "^1.83.4"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.3",
+    "parcel": "^2.13.3"
+  }
+}
