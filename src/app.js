@@ -32,12 +32,11 @@ document.getElementById('json-container').innerHTML = `<pre><code class="json">$
 
 
 function handleCopyCurlRequest(event) {
-    const button = event.target; // Get the clicked button
-    const method = button.getAttribute('data-method'); // Get the HTTP method
-    const url = button.getAttribute('data-url'); // Get the URL
-    const curlCommand = `curl -X ${method} "https://onmocks.xyz${url}"`; // Build the cURL command
+    const button = event.target;
+    const method = button.getAttribute('data-method');
+    const url = button.getAttribute('data-url');
+    const curlCommand = `curl -X ${method} "https://onmocks.xyz${url}"`;
 
-    // Copy the cURL command to clipboard
     navigator.clipboard.writeText(curlCommand).then(() => {
         showToast(`cURL command copied: ${curlCommand}`);
     }).catch(err => {
@@ -48,10 +47,10 @@ function handleCopyCurlRequest(event) {
 function showToast(message) {
     const toastElement = document.getElementById('toast');
     const toastBody = toastElement.querySelector('.toast-body');
-    toastBody.textContent = message; // Update the message in the toast
+    toastBody.textContent = message;
 
     const toast = new bootstrap.Toast(toastElement);
-    toast.show();  // Show the toast
+    toast.show();
 }
 
 document.querySelectorAll('.copy-curl-request').forEach(button => {
