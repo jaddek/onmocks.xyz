@@ -225,6 +225,26 @@ function handleCopyRequest(event) {
     }
 }
 
+function getLastLoginMessage() {
+    const now = new Date();
+
+    // Array for weekday names (similar to "Sat" in the message)
+    const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+    // Format date and time
+    const day = weekdays[now.getDay()]; // Get the current weekday
+    const month = now.toLocaleString('default', {month: 'short'}); // Short month name
+    const date = now.getDate(); // Day of the month
+    const hours = String(now.getHours()).padStart(2, '0'); // Hour in 24-hour format
+    const minutes = String(now.getMinutes()).padStart(2, '0'); // Minutes
+    const seconds = String(now.getSeconds()).padStart(2, '0'); // Seconds
+
+    // Build the login message
+    return `Last login: ${day} ${month} ${date} ${hours}:${minutes}:${seconds} on ttys001`;
+}
+
 document.querySelectorAll('.handleCopyRequest').forEach(button => {
     button.addEventListener('click', handleCopyRequest);
 });
+
+document.getElementById('last-login').textContent = getLastLoginMessage();
