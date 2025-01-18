@@ -13,19 +13,76 @@ $accordion-button-active-icon-dark: $accordion-button-active-icon-dark
 
 @use 'highlight.js/styles/github-dark-dimmed.min.css';
 
+.curl-promo {
+    color: $p-python-ico-color;//$p-main-color;
+
+}
+
+.btn-outline-rust {
+  border: 2px solid $p-rust-color;
+  background-color: black;
+  color: $p-rust-color;
+}
+
+.btn-outline-rust:hover {
+  background-color: $p-rust-color;
+  color: black;
+}
+
+.btn-outline-php {
+  border: 2px solid $p-php-color;
+  background-color: black;
+  color: $p-php-color;
+}
+
+.btn-outline-php:hover {
+  background-color: $p-php-color;
+  color: black;
+}
+
+.btn-outline-python {
+  border: 2px solid $p-python-color;
+  background-color: black;
+  color: $p-python-ico-color;
+
+  span {
+    color: $p-python-color;
+  }
+}
+
+.btn-outline-python:hover {
+  background-color: $p-python-color;
+  color: black;
+
+  span {
+    color: black;
+  }
+}
+
+.btn-outline-js {
+  border: 2px solid $p-js-color;
+  background-color: black;
+  color: $p-js-color;
+}
+
+.btn-outline-js:hover {
+  background-color: $p-js-color;
+  color: black;
+}
+
 
 .feature-icon {
-    width: 4rem;
-    height: 4rem;
-    border-radius: .75rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: .75rem;
 }
 
 .icon-square {
-    width: 3rem;
-    height: 3rem;
-    border-radius: .75rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: .75rem;
 }
 
 .footer-text {
-    display: block;
+  display: block;
 }
