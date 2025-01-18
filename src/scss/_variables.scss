@@ -5,9 +5,15 @@ $p-php-color: #8892be;
 $p-python-color: #4584b6;
 $p-python-ico-color: #ffde57;
 $p-js-color: #F0DB4F;
+$p-tab-link-active-color: #ffffff;
+$p-tab-link-active-bg: #00a300;
+$p-console-color: #3cec3c;
 
 $fa-font-path: '../../node_modules/@fortawesome/fontawesome-free/webfonts';
 $font-family-sans-serif: 'Helvetica Neue', sans-serif;
+
+$nav-link-color: $p-main-color;
+$nav-link-hover-color: $p-main-color;
 
 $accordion-button-active-bg: $p-main-color;
 $accordion-button-active-color: #ffffff;
@@ -17,3 +23,6 @@ $accordion-icon-active-color-dark: $p-elements-color;
 
 $accordion-button-icon-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='#{$accordion-icon-color-dark}' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>");
 $accordion-button-active-icon-dark: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='#{$accordion-icon-active-color-dark}' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>");
+
+$nav-pills-link-active-color: $p-tab-link-active-color;
+$nav-pills-link-active-bg: $p-tab-link-active-bg;

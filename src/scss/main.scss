@@ -4,7 +4,11 @@
 $accordion-button-active-bg: $accordion-button-active-bg,
 $accordion-button-active-color:$accordion-button-active-color,
 $accordion-button-icon-dark: $accordion-button-icon-dark,
-$accordion-button-active-icon-dark: $accordion-button-active-icon-dark
+$accordion-button-active-icon-dark: $accordion-button-active-icon-dark,
+$nav-link-color: $nav-link-color,
+$nav-link-hover-color: $nav-link-hover-color,
+$nav-pills-link-active-color: $nav-pills-link-active-color,
+$nav-pills-link-active-bg: $nav-pills-link-active-bg,
 );
 @use "@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @use "@fortawesome/fontawesome-free/scss/solid.scss" with ($fa-font-path: $fa-font-path);
@@ -14,7 +18,7 @@ $accordion-button-active-icon-dark: $accordion-button-active-icon-dark
 @use 'highlight.js/styles/github-dark-dimmed.min.css';
 
 .curl-promo {
-    color: $p-python-ico-color;//$p-main-color;
+  color: $p-console-color
 
 }
 
