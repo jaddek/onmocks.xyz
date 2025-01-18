@@ -17,10 +17,13 @@
                 accelerate your workflow.</p>
         </div>
         <div class="col col-sm-12 col-lg-6 mx-auto col border rounded-3 bg-body-tertiary">
-            <div class="py-5">
-                <p>curl -X GET https://onmocks.xyz/employees<!--?filter[id][in]=101,102--></p>
-                <div id="json-container">
-                </div>
+            <div class="py-2">
+                <p class="curl-promo fw-normal">Last login: Sat Jan 18 14:21:40 on ttys001<br>
+                    <i class="fa-solid fa-caret-right"></i> curl -X GET https://onmocks.xyz/employees
+                    <!--?filter[id][in]=101,102--></p>
+                <p id="json-container">
+                </p>
+                <p><i class="curl-promo fa-solid fa-caret-right fa-beat-fade"></i> <i class="fa-solid fa-ellipsis fa-bounce"></i></p>
             </div>
         </div>
     </div>
@@ -97,13 +100,19 @@
                                     >/rest/api/countries</a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown-item">
-                                                <a href="/rest/api/countries" class="text-decoration-none text-info p-2"
+                                                <a href="javascript:void(0);"
+                                                   class="text-decoration-none text-info p-2 handleCopyRequest"
+                                                   data-url="/rest/api/countries"
+                                                   data-runtime="php"
                                                    data-method="GET">
                                                     <i class="fa-brands fa-php fa-xl me-2"></i> Copy as PHP
                                                 </a>
                                             </li>
                                             <li class="dropdown-item">
-                                                <a href="/rest/api/countries" class="text-decoration-none text-info p-2"
+                                                <a href="javascript:void(0)"
+                                                   data-url="/rest/api/countries"
+                                                   class="text-decoration-none text-info p-2 handleCopyRequest"
+                                                   data-runtime="js"
                                                    data-method="GET">
                                                     <i class="fa-brands fa-square-js fa-xl me-2"></i> Copy as
                                                     JavaScript
@@ -112,22 +121,31 @@
                                             <li class="dropdown-item">
                                                 <a
                                                         href="javascript:void(0)"
-                                                        class="text-decoration-none text-info p-2 copyCurlRequest"
+                                                        class="text-decoration-none text-info p-2 handleCopyRequest"
                                                         data-url="/rest/api/countries"
                                                         data-method="GET"
+                                                        data-runtime="python"
                                                 >
                                                     <i class="fa-brands fa-python fa-xl me-2"></i> Copy as Python
                                                 </a>
                                             </li>
                                             <li class="dropdown-item">
-                                                <a href="/rest/api/countries" class="text-decoration-none text-info p-2"
-                                                   data-method="GET">
+                                                <a
+                                                        href="javascript:void(0)"
+                                                        data-url="/rest/api/countries"
+                                                        class="text-decoration-none text-info p-2 handleCopyRequest"
+                                                        data-runtime="go"
+                                                        data-method="GET">
                                                     <i class="fa-brands fa-golang fa-xl me-2"></i> Copy as Go
                                                 </a>
                                             </li>
                                             <li class="dropdown-item">
-                                                <a href="/rest/api/countries" class="text-decoration-none text-info p-2"
-                                                   data-method="GET">
+                                                <a
+                                                        href="javascript:void(0)"
+                                                        data-url="/rest/api/countries"
+                                                        data-runtime="rust"
+                                                        class="text-decoration-none text-info p-2 handleCopyRequest"
+                                                        data-method="GET">
                                                     <i class="fa-brands fa-rust fa-xl me-2"></i> Copy as Rust
                                                 </a>
                                             </li>
@@ -137,8 +155,9 @@
                                             <li class="dropdown-item">
                                                 <a
                                                         href="javascript:void(0)"
-                                                        class="text-decoration-none text-info p-2 copyCurlRequest"
+                                                        class="text-decoration-none text-info p-2 handleCopyRequest"
                                                         data-url="/rest/api/countries"
+                                                        data-runtime="curl"
                                                         data-method="GET"
                                                 >
                                                     Copy as cURL
@@ -192,37 +211,52 @@
                                     >/rest/api/countries</a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown-item">
-                                                <a href="/rest/api/countries" class="text-decoration-none text-info p-2"
-                                                   data-method="GET">
+                                                <a href="javascript:void(0);"
+                                                   class="text-decoration-none text-info p-2 handleCopyRequest"
+                                                   data-url="/rest/api/countries"
+                                                   data-runtime="php"
+                                                   data-method="POST">
                                                     <i class="fa-brands fa-php fa-xl me-2"></i> Copy as PHP
                                                 </a>
                                             </li>
                                             <li class="dropdown-item">
-                                                <a href="/rest/api/countries" class="text-decoration-none text-info p-2"
-                                                   data-method="GET">
+                                                <a href="javascript:void(0);"
+                                                   class="text-decoration-none text-info p-2 handleCopyRequest"
+                                                   data-url="/rest/api/countries"
+                                                   data-runtime="js"
+                                                   data-method="POST">
+                                                    >
                                                     <i class="fa-brands fa-square-js fa-xl me-2"></i> Copy as
                                                     JavaScript
                                                 </a>
                                             </li>
                                             <li class="dropdown-item">
-                                                <a
-                                                        href="javascript:void(0)"
-                                                        class="text-decoration-none text-info p-2 copyCurlRequest"
-                                                        data-url="/rest/api/countries"
-                                                        data-method="GET"
-                                                >
+                                                <a href="javascript:void(0);"
+                                                   class="text-decoration-none text-info p-2 handleCopyRequest"
+                                                   data-url="/rest/api/countries"
+                                                   data-runtime="python"
+                                                   data-method="POST">
+                                                    >
                                                     <i class="fa-brands fa-python fa-xl me-2"></i> Copy as Python
                                                 </a>
                                             </li>
                                             <li class="dropdown-item">
-                                                <a href="/rest/api/countries" class="text-decoration-none text-info p-2"
-                                                   data-method="GET">
+                                                <a href="javascript:void(0);"
+                                                   class="text-decoration-none text-info p-2 handleCopyRequest"
+                                                   data-url="/rest/api/countries"
+                                                   data-runtime="go"
+                                                   data-method="POST">
+                                                    >
                                                     <i class="fa-brands fa-golang fa-xl me-2"></i> Copy as Go
                                                 </a>
                                             </li>
                                             <li class="dropdown-item">
-                                                <a href="/rest/api/countries" class="text-decoration-none text-info p-2"
-                                                   data-method="GET">
+                                                <a href="javascript:void(0);"
+                                                   class="text-decoration-none text-info p-2 handleCopyRequest"
+                                                   data-url="/rest/api/countries"
+                                                   data-runtime="rust"
+                                                   data-method="POST">
+                                                    >
                                                     <i class="fa-brands fa-rust fa-xl me-2"></i> Copy as Rust
                                                 </a>
                                             </li>
@@ -232,9 +266,10 @@
                                             <li class="dropdown-item">
                                                 <a
                                                         href="javascript:void(0)"
-                                                        class="text-decoration-none text-info p-2 copyCurlRequest"
+                                                        class="text-decoration-none text-info p-2 handleCopyRequest"
                                                         data-url="/rest/api/countries"
-                                                        data-method="GET"
+                                                        data-runtime="curl"
+                                                        data-method="POST"
                                                 >
                                                     Copy as cURL
                                                 </a>
@@ -249,8 +284,13 @@
                                     >/rest/api/countries/{id}</a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown-item">
-                                                <a href="/rest/api/countries" class="text-decoration-none text-info p-2"
-                                                   data-method="GET">
+                                                <a
+                                                        href="javascript:void(0)"
+                                                        class="text-decoration-none text-info p-2 handleCopyRequest"
+                                                        data-url="/rest/api/countries"
+                                                        data-runtime="php"
+                                                        data-method="GET"
+                                                >
                                                     <i class="fa-brands fa-php fa-xl me-2"></i> Copy as PHP
                                                 </a>
                                             </li>
@@ -264,22 +304,33 @@
                                             <li class="dropdown-item">
                                                 <a
                                                         href="javascript:void(0)"
-                                                        class="text-decoration-none text-info p-2 copyCurlRequest"
+                                                        class="text-decoration-none text-info p-2 handleCopyRequest"
                                                         data-url="/rest/api/countries"
+                                                        data-runtime="python"
                                                         data-method="GET"
                                                 >
                                                     <i class="fa-brands fa-python fa-xl me-2"></i> Copy as Python
                                                 </a>
                                             </li>
                                             <li class="dropdown-item">
-                                                <a href="/rest/api/countries" class="text-decoration-none text-info p-2"
-                                                   data-method="GET">
+                                                <a
+                                                        href="javascript:void(0)"
+                                                        class="text-decoration-none text-info p-2 handleCopyRequest"
+                                                        data-url="/rest/api/countries"
+                                                        data-runtime="go"
+                                                        data-method="GET"
+                                                >
                                                     <i class="fa-brands fa-golang fa-xl me-2"></i> Copy as Go
                                                 </a>
                                             </li>
                                             <li class="dropdown-item">
-                                                <a href="/rest/api/countries" class="text-decoration-none text-info p-2"
-                                                   data-method="GET">
+                                                <a
+                                                        href="javascript:void(0)"
+                                                        class="text-decoration-none text-info p-2 handleCopyRequest"
+                                                        data-url="/rest/api/countries"
+                                                        data-runtime="rust"
+                                                        data-method="GET"
+                                                >
                                                     <i class="fa-brands fa-rust fa-xl me-2"></i> Copy as Rust
                                                 </a>
                                             </li>
@@ -289,8 +340,9 @@
                                             <li class="dropdown-item">
                                                 <a
                                                         href="javascript:void(0)"
-                                                        class="text-decoration-none text-info p-2 copyCurlRequest"
+                                                        class="text-decoration-none text-info p-2 handleCopyRequest"
                                                         data-url="/rest/api/countries"
+                                                        data-runtime="curl"
                                                         data-method="GET"
                                                 >
                                                     Copy as cURL
@@ -307,14 +359,24 @@
                                         /rest/api/countries/{id}</a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown-item">
-                                                <a href="/rest/api/countries" class="text-decoration-none text-info p-2"
-                                                   data-method="GET">
+                                                <a
+                                                        href="javascript:void(0)"
+                                                        class="text-decoration-none text-info p-2 handleCopyRequest"
+                                                        data-url="/rest/api/countries"
+                                                        data-runtime="php"
+                                                        data-method="PUT"
+                                                >
                                                     <i class="fa-brands fa-php fa-xl me-2"></i> Copy as PHP
                                                 </a>
                                             </li>
                                             <li class="dropdown-item">
-                                                <a href="/rest/api/countries" class="text-decoration-none text-info p-2"
-                                                   data-method="GET">
+                                                <a
+                                                        href="javascript:void(0)"
+                                                        class="text-decoration-none text-info p-2 handleCopyRequest"
+                                                        data-url="/rest/api/countries"
+                                                        data-runtime="js"
+                                                        data-method="PUT"
+                                                >
                                                     <i class="fa-brands fa-square-js fa-xl me-2"></i> Copy as
                                                     JavaScript
                                                 </a>
@@ -322,22 +384,33 @@
                                             <li class="dropdown-item">
                                                 <a
                                                         href="javascript:void(0)"
-                                                        class="text-decoration-none text-info p-2 copyCurlRequest"
+                                                        class="text-decoration-none text-info p-2 handleCopyRequest"
                                                         data-url="/rest/api/countries"
-                                                        data-method="GET"
+                                                        data-runtime="python"
+                                                        data-method="PUT"
                                                 >
                                                     <i class="fa-brands fa-python fa-xl me-2"></i> Copy as Python
                                                 </a>
                                             </li>
                                             <li class="dropdown-item">
-                                                <a href="/rest/api/countries" class="text-decoration-none text-info p-2"
-                                                   data-method="GET">
+                                                <a
+                                                        href="javascript:void(0)"
+                                                        class="text-decoration-none text-info p-2 handleCopyRequest"
+                                                        data-url="/rest/api/countries"
+                                                        data-runtime="go"
+                                                        data-method="PUT"
+                                                >
                                                     <i class="fa-brands fa-golang fa-xl me-2"></i> Copy as Go
                                                 </a>
                                             </li>
                                             <li class="dropdown-item">
-                                                <a href="/rest/api/countries" class="text-decoration-none text-info p-2"
-                                                   data-method="GET">
+                                                <a
+                                                        href="javascript:void(0)"
+                                                        class="text-decoration-none text-info p-2 handleCopyRequest"
+                                                        data-url="/rest/api/countries"
+                                                        data-runtime="rust"
+                                                        data-method="PUT"
+                                                >
                                                     <i class="fa-brands fa-rust fa-xl me-2"></i> Copy as Rust
                                                 </a>
                                             </li>
@@ -347,9 +420,10 @@
                                             <li class="dropdown-item">
                                                 <a
                                                         href="javascript:void(0)"
-                                                        class="text-decoration-none text-info p-2 copyCurlRequest"
+                                                        class="text-decoration-none text-info p-2 handleCopyRequest"
                                                         data-url="/rest/api/countries"
-                                                        data-method="GET"
+                                                        data-runtime="curl"
+                                                        data-method="PUT"
                                                 >
                                                     Copy as cURL
                                                 </a>
@@ -365,14 +439,24 @@
                                         /rest/api/countries/{id}</a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown-item">
-                                                <a href="/rest/api/countries" class="text-decoration-none text-info p-2"
-                                                   data-method="GET">
+                                                <a
+                                                        href="javascript:void(0)"
+                                                        class="text-decoration-none text-info p-2 handle"
+                                                        data-url="/rest/api/countries"
+                                                        data-runtime="php"
+                                                        data-method="DELETE"
+                                                >
                                                     <i class="fa-brands fa-php fa-xl me-2"></i> Copy as PHP
                                                 </a>
                                             </li>
                                             <li class="dropdown-item">
-                                                <a href="/rest/api/countries" class="text-decoration-none text-info p-2"
-                                                   data-method="GET">
+                                                <a
+                                                        href="javascript:void(0)"
+                                                        class="text-decoration-none text-info p-2 handleCopyRequest"
+                                                        data-url="/rest/api/countries"
+                                                        data-runtime="js"
+                                                        data-method="DELETE"
+                                                >
                                                     <i class="fa-brands fa-square-js fa-xl me-2"></i> Copy as
                                                     JavaScript
                                                 </a>
@@ -380,22 +464,33 @@
                                             <li class="dropdown-item">
                                                 <a
                                                         href="javascript:void(0)"
-                                                        class="text-decoration-none text-info p-2 copyCurlRequest"
+                                                        class="text-decoration-none text-info p-2 handleCopyRequest"
                                                         data-url="/rest/api/countries"
-                                                        data-method="GET"
+                                                        data-runtime="python"
+                                                        data-method="DELETE"
                                                 >
                                                     <i class="fa-brands fa-python fa-xl me-2"></i> Copy as Python
                                                 </a>
                                             </li>
                                             <li class="dropdown-item">
-                                                <a href="/rest/api/countries" class="text-decoration-none text-info p-2"
-                                                   data-method="GET">
+                                                <a
+                                                        href="javascript:void(0)"
+                                                        class="text-decoration-none text-info p-2 handleCopyRequest"
+                                                        data-url="/rest/api/countries"
+                                                        data-runtime="go"
+                                                        data-method="DELETE"
+                                                >
                                                     <i class="fa-brands fa-golang fa-xl me-2"></i> Copy as Go
                                                 </a>
                                             </li>
                                             <li class="dropdown-item">
-                                                <a href="/rest/api/countries" class="text-decoration-none text-info p-2"
-                                                   data-method="GET">
+                                                <a
+                                                        href="javascript:void(0)"
+                                                        class="text-decoration-none text-info p-2 handleCopyRequest"
+                                                        data-url="/rest/api/countries"
+                                                        data-runtime="rust"
+                                                        data-method="DELETE"
+                                                >
                                                     <i class="fa-brands fa-rust fa-xl me-2"></i> Copy as Rust
                                                 </a>
                                             </li>
@@ -405,9 +500,10 @@
                                             <li class="dropdown-item">
                                                 <a
                                                         href="javascript:void(0)"
-                                                        class="text-decoration-none text-info p-2 copyCurlRequest"
+                                                        class="text-decoration-none text-info p-2 handleCopyRequest"
                                                         data-url="/rest/api/countries"
-                                                        data-method="GET"
+                                                        data-runtime="curl"
+                                                        data-method="DELETE"
                                                 >
                                                     Copy as cURL
                                                 </a>
@@ -435,34 +531,34 @@
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
                                         GET /rest/api/languages
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="GET"
                                                 data-url="/rest/api/languages">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         POST /rest/api/languages
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="POST" data-url="/rest/api/languages">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         GET /rest/api/languages/{id}
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="GET"
                                                 data-url="/rest/api/languages/{id}">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         PUT /rest/api/languages/{id}
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="PUT"
                                                 data-url="/rest/api/languages/{id}">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         DELETE /rest/api/languages/{id}
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="DELETE" data-url="/rest/api/languages/{id}">Copy cURL
                                         </button>
                                     </li>
@@ -486,34 +582,34 @@
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
                                         GET /rest/api/timezones
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="GET"
                                                 data-url="/rest/api/timezones">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         POST /rest/api/timezones
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="POST" data-url="/rest/api/timezones">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         GET /rest/api/timezones/{id}
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="GET"
                                                 data-url="/rest/api/timezones/{id}">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         PUT /rest/api/timezones/{id}
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="PUT"
                                                 data-url="/rest/api/timezones/{id}">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         DELETE /rest/api/timezones/{id}
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="DELETE" data-url="/rest/api/timezones/{id}">Copy cURL
                                         </button>
                                     </li>
@@ -537,34 +633,34 @@
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
                                         GET /rest/api/capitals
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="GET"
                                                 data-url="/rest/api/capitals">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         POST /rest/api/capitals
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="POST" data-url="/rest/api/capitals">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         GET /rest/api/capitals/{id}
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="GET"
                                                 data-url="/rest/api/capitals/{id}">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         PUT /rest/api/capitals/{id}
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="PUT"
                                                 data-url="/rest/api/capitals/{id}">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         DELETE /rest/api/capitals/{id}
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="DELETE" data-url="/rest/api/capitals/{id}">Copy cURL
                                         </button>
                                     </li>
@@ -586,34 +682,34 @@
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
                                         GET /rest/api/users
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="GET"
                                                 data-url="/rest/api/users">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         POST /rest/api/users
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="POST" data-url="/rest/api/users">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         GET /rest/api/users/{id}
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="GET"
                                                 data-url="/rest/api/users/{id}">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         PUT /rest/api/users/{id}
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="PUT"
                                                 data-url="/rest/api/users/{id}">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         DELETE /rest/api/users/{id}
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="DELETE" data-url="/rest/api/users/{id}">Copy cURL
                                         </button>
                                     </li>
@@ -637,34 +733,34 @@
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
                                         GET /rest/api/transactions
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="GET"
                                                 data-url="/rest/api/transactions">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         POST /rest/api/transactions
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="POST" data-url="/rest/api/transactions">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         GET /rest/api/transactions/{id}
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="GET"
                                                 data-url="/rest/api/transactions/{id}">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         PUT /rest/api/transactions/{id}
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="PUT"
                                                 data-url="/rest/api/transactions/{id}">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         DELETE /rest/api/transactions/{id}
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="DELETE" data-url="/rest/api/transactions/{id}">Copy cURL
                                         </button>
                                     </li>
@@ -686,34 +782,34 @@
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
                                         GET /rest/api/posts
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="GET"
                                                 data-url="/rest/api/posts">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         POST /rest/api/posts
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="POST" data-url="/rest/api/posts">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         GET /rest/api/posts/{id}
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="GET"
                                                 data-url="/rest/api/posts/{id}">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         PUT /rest/api/posts/{id}
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="PUT"
                                                 data-url="/rest/api/posts/{id}">Copy cURL
                                         </button>
                                     </li>
                                     <li class="list-group-item">
                                         DELETE /rest/api/posts/{id}
-                                        <button class="btn btn-sm btn-outline-info ms-2 copyCurlRequest"
+                                        <button class="btn btn-sm btn-outline-info ms-2 handleCopyRequest"
                                                 data-method="DELETE" data-url="/rest/api/posts/{id}">Copy cURL
                                         </button>
                                     </li>

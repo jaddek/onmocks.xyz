@@ -13,41 +13,45 @@ $accordion-button-active-icon-dark: $accordion-button-active-icon-dark
 
 @use 'highlight.js/styles/github-dark-dimmed.min.css';
 
+.curl-promo {
+    color: $p-python-ico-color;//$p-main-color;
+
+}
 
 .btn-outline-rust {
-  border: 2px solid #C36241;
+  border: 2px solid $p-rust-color;
   background-color: black;
-  color: #C36241;
+  color: $p-rust-color;
 }
 
 .btn-outline-rust:hover {
-  background-color: #C36241;
+  background-color: $p-rust-color;
   color: black;
 }
 
 .btn-outline-php {
-  border: 2px solid #8892be;
+  border: 2px solid $p-php-color;
   background-color: black;
-  color: #8892be;
+  color: $p-php-color;
 }
 
 .btn-outline-php:hover {
-  background-color: #8892be;
+  background-color: $p-php-color;
   color: black;
 }
 
 .btn-outline-python {
-  border: 2px solid #4584b6;
+  border: 2px solid $p-python-color;
   background-color: black;
-  color: #ffde57;
+  color: $p-python-ico-color;
 
   span {
-    color :#4584b6;
+    color: $p-python-color;
   }
 }
 
 .btn-outline-python:hover {
-  background-color: #4584b6;
+  background-color: $p-python-color;
   color: black;
 
   span {
@@ -56,13 +60,13 @@ $accordion-button-active-icon-dark: $accordion-button-active-icon-dark
 }
 
 .btn-outline-js {
-  border: 2px solid #F0DB4F;
+  border: 2px solid $p-js-color;
   background-color: black;
-  color: #F0DB4F;
+  color: $p-js-color;
 }
 
 .btn-outline-js:hover {
-  background-color: #F0DB4F;
+  background-color: $p-js-color;
   color: black;
 }
 
