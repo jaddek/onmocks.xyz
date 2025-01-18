@@ -1,0 +1,284 @@
+{
+  "transactions": [
+    {
+      "transaction_id": "TXN_20240105_001",
+      "username": "john_doe98",
+      "amount": 150.75,
+      "transaction_date": "2024-01-05T15:45:22Z",
+      "type": "debit"
+    },
+    {
+      "transaction_id": "TXN_20231201_002",
+      "username": "jane_smith32",
+      "amount": 350.00,
+      "transaction_date": "2023-12-01T11:05:13Z",
+      "type": "credit"
+    },
+    {
+      "transaction_id": "TXN_20231118_003",
+      "username": "lucas_brown89",
+      "amount": 500.25,
+      "transaction_date": "2023-11-18T10:17:29Z",
+      "type": "debit"
+    },
+    {
+      "transaction_id": "TXN_20231102_004",
+      "username": "sophia_martin01",
+      "amount": 750.00,
+      "transaction_date": "2023-11-02T14:35:42Z",
+      "type": "credit"
+    },
+    {
+      "transaction_id": "TXN_20231022_005",
+      "username": "michael_jones72",
+      "amount": 220.50,
+      "transaction_date": "2023-10-22T16:48:01Z",
+      "type": "debit"
+    },
+    {
+      "transaction_id": "TXN_20230911_006",
+      "username": "emily_davis03",
+      "amount": 125.00,
+      "transaction_date": "2023-09-11T17:12:55Z",
+      "type": "credit"
+    },
+    {
+      "transaction_id": "TXN_20230815_007",
+      "username": "daniel_wilson34",
+      "amount": 95.80,
+      "transaction_date": "2023-08-15T09:02:37Z",
+      "type": "debit"
+    },
+    {
+      "transaction_id": "TXN_20230709_008",
+      "username": "olivia_miller55",
+      "amount": 400.00,
+      "transaction_date": "2023-07-09T14:55:11Z",
+      "type": "credit"
+    },
+    {
+      "transaction_id": "TXN_20230605_009",
+      "username": "jacob_smith40",
+      "amount": 300.60,
+      "transaction_date": "2023-06-05T12:12:43Z",
+      "type": "debit"
+    },
+    {
+      "transaction_id": "TXN_20230519_010",
+      "username": "ava_johnson22",
+      "amount": 600.00,
+      "transaction_date": "2023-05-19T18:22:19Z",
+      "type": "credit"
+    },
+    {
+      "transaction_id": "TXN_20230423_011",
+      "username": "william_brown12",
+      "amount": 180.45,
+      "transaction_date": "2023-04-23T09:33:57Z",
+      "type": "debit"
+    },
+    {
+      "transaction_id": "TXN_20230329_012",
+      "username": "mia_white88",
+      "amount": 550.25,
+      "transaction_date": "2023-03-29T13:24:15Z",
+      "type": "credit"
+    },
+    {
+      "transaction_id": "TXN_20230218_013",
+      "username": "sebastian_taylor71",
+      "amount": 205.00,
+      "transaction_date": "2023-02-18T10:38:11Z",
+      "type": "debit"
+    },
+    {
+      "transaction_id": "TXN_20230130_014",
+      "username": "amelia_smith11",
+      "amount": 430.60,
+      "transaction_date": "2023-01-30T14:29:43Z",
+      "type": "credit"
+    },
+    {
+      "transaction_id": "TXN_20230110_015",
+      "username": "ethan_moore25",
+      "amount": 275.40,
+      "transaction_date": "2023-01-10T12:40:30Z",
+      "type": "debit"
+    },
+    {
+      "transaction_id": "TXN_20221222_016",
+      "username": "lucy_jones63",
+      "amount": 150.00,
+      "transaction_date": "2022-12-22T16:12:48Z",
+      "type": "credit"
+    },
+    {
+      "transaction_id": "TXN_20221210_017",
+      "username": "benjamin_garcia41",
+      "amount": 200.35,
+      "transaction_date": "2022-12-10T14:32:56Z",
+      "type": "debit"
+    },
+    {
+      "transaction_id": "TXN_20221115_018",
+      "username": "harper_lee02",
+      "amount": 320.60,
+      "transaction_date": "2022-11-15T13:28:05Z",
+      "type": "credit"
+    },
+    {
+      "transaction_id": "TXN_20221025_019",
+      "username": "lucas_james66",
+      "amount": 490.80,
+      "transaction_date": "2022-10-25T12:45:29Z",
+      "type": "debit"
+    },
+    {
+      "transaction_id": "TXN_20220920_020",
+      "username": "chloe_davis49",
+      "amount": 375.00,
+      "transaction_date": "2022-09-20T11:58:12Z",
+      "type": "credit"
+    },
+    {
+      "transaction_id": "TXN_20220814_021",
+      "username": "ryan_evans59",
+      "amount": 650.15,
+      "transaction_date": "2022-08-14T15:45:27Z",
+      "type": "debit"
+    },
+    {
+      "transaction_id": "TXN_20220719_022",
+      "username": "zoe_taylor10",
+      "amount": 380.00,
+      "transaction_date": "2022-07-19T08:56:38Z",
+      "type": "credit"
+    },
+    {
+      "transaction_id": "TXN_20220630_023",
+      "username": "jackson_clark77",
+      "amount": 100.99,
+      "transaction_date": "2022-06-30T10:20:05Z",
+      "type": "debit"
+    },
+    {
+      "transaction_id": "TXN_20220522_024",
+      "username": "grace_king05",
+      "amount": 510.20,
+      "transaction_date": "2022-05-22T12:38:47Z",
+      "type": "credit"
+    },
+    {
+      "transaction_id": "TXN_20220414_025",
+      "username": "elijah_harris36",
+      "amount": 425.55,
+      "transaction_date": "2022-04-14T16:50:33Z",
+      "type": "debit"
+    },
+    {
+      "transaction_id": "TXN_20220328_026",
+      "username": "isabella_scott09",
+      "amount": 320.80,
+      "transaction_date": "2022-03-28T11:27:14Z",
+      "type": "credit"
+    },
+    {
+      "transaction_id": "TXN_20220218_027",
+      "username": "james_williams58",
+      "amount": 120.75,
+      "transaction_date": "2022-02-18T14:30:50Z",
+      "type": "debit"
+    },
+    {
+      "transaction_id": "TXN_20220112_028",
+      "username": "dylan_brown42",
+      "amount": 500.00,
+      "transaction_date": "2022-01-12T08:45:34Z",
+      "type": "credit"
+    },
+    {
+      "transaction_id": "TXN_20211215_029",
+      "username": "sophia_lee22",
+      "amount": 295.20,
+      "transaction_date": "2021-12-15T09:24:13Z",
+      "type": "debit"
+    },
+    {
+      "transaction_id": "TXN_20211123_030",
+      "username": "jacob_miller71",
+      "amount": 440.90,
+      "transaction_date": "2021-11-23T13:38:41Z",
+      "type": "credit"
+    },
+    {
+      "transaction_id": "TXN_20211017_031",
+      "username": "emma_johnson64",
+      "amount": 250.00,
+      "transaction_date": "2021-10-17T08:52:19Z",
+      "type": "debit"
+    },
+    {
+      "transaction_id": "TXN_20210925_032",
+      "username": "benjamin_smith04",
+      "amount": 600.50,
+      "transaction_date": "2021-09-25T14:38:50Z",
+      "type": "credit"
+    },
+    {
+      "transaction_id": "TXN_20210809_033",
+      "username": "lucy_wilson51",
+      "amount": 150.60,
+      "transaction_date": "2021-08-09T13:48:12Z",
+      "type": "debit"
+    },
+    {
+      "transaction_id": "TXN_20210719_034",
+      "username": "ryan_clark31",
+      "amount": 130.25,
+      "transaction_date": "2021-07-19T12:20:59Z",
+      "type": "credit"
+    },
+    {
+      "transaction_id": "TXN_20210630_035",
+      "username": "lily_davis67",
+      "amount": 210.00,
+      "transaction_date": "2021-06-30T14:12:39Z",
+      "type": "debit"
+    },
+    {
+      "transaction_id": "TXN_20210608_036",
+      "username": "nathan_jones27",
+      "amount": 350.50,
+      "transaction_date": "2021-06-08T11:13:24Z",
+      "type": "credit"
+    },
+    {
+      "transaction_id": "TXN_20210516_037",
+      "username": "victoria_king09",
+      "amount": 270.80,
+      "transaction_date": "2021-05-16T10:24:11Z",
+      "type": "debit"
+    },
+    {
+      "transaction_id": "TXN_20210412_038",
+      "username": "harry_james44",
+      "amount": 620.10,
+      "transaction_date": "2021-04-12T08:50:33Z",
+      "type": "credit"
+    },
+    {
+      "transaction_id": "TXN_20210329_039",
+      "username": "zoe_scott89",
+      "amount": 450.90,
+      "transaction_date": "2021-03-29T15:40:22Z",
+      "type": "debit"
+    },
+    {
+      "transaction_id": "TXN_20210225_040",
+      "username": "ryan_white75",
+      "amount": 250.55,
+      "transaction_date": "2021-02-25T09:50:13Z",
+      "type": "credit"
+    }
+  ]
+}

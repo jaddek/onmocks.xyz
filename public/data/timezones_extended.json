@@ -1,0 +1,384 @@
+{
+  "timezones": [
+    {
+      "name": "Africa/Abidjan",
+      "utc_offset": "UTC+00:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Accra",
+      "utc_offset": "UTC+00:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Addis_Ababa",
+      "utc_offset": "UTC+03:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Algiers",
+      "utc_offset": "UTC+01:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Asmara",
+      "utc_offset": "UTC+03:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Bamako",
+      "utc_offset": "UTC+00:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Bangui",
+      "utc_offset": "UTC+01:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Banjul",
+      "utc_offset": "UTC+00:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Bissau",
+      "utc_offset": "UTC+00:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Blantyre",
+      "utc_offset": "UTC+02:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Brazzaville",
+      "utc_offset": "UTC+01:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Bujumbura",
+      "utc_offset": "UTC+02:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Cairo",
+      "utc_offset": "UTC+02:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Casablanca",
+      "utc_offset": "UTC+01:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Ceuta",
+      "utc_offset": "UTC+01:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Conakry",
+      "utc_offset": "UTC+00:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Dakar",
+      "utc_offset": "UTC+00:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Dar_es_Salaam",
+      "utc_offset": "UTC+03:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Djibouti",
+      "utc_offset": "UTC+03:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Johannesburg",
+      "utc_offset": "UTC+02:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Juba",
+      "utc_offset": "UTC+03:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Kampala",
+      "utc_offset": "UTC+03:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Khartoum",
+      "utc_offset": "UTC+02:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Kigali",
+      "utc_offset": "UTC+02:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Kinshasa",
+      "utc_offset": "UTC+01:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Lagos",
+      "utc_offset": "UTC+01:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Libreville",
+      "utc_offset": "UTC+01:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Lome",
+      "utc_offset": "UTC+00:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Luanda",
+      "utc_offset": "UTC+01:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Lubumbashi",
+      "utc_offset": "UTC+02:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Lusaka",
+      "utc_offset": "UTC+02:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Malabo",
+      "utc_offset": "UTC+01:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Maputo",
+      "utc_offset": "UTC+02:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Maseru",
+      "utc_offset": "UTC+02:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Mbabane",
+      "utc_offset": "UTC+02:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Mogadishu",
+      "utc_offset": "UTC+03:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Monrovia",
+      "utc_offset": "UTC+00:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Nairobi",
+      "utc_offset": "UTC+03:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Ndjamena",
+      "utc_offset": "UTC+01:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Niamey",
+      "utc_offset": "UTC+01:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Nouakchott",
+      "utc_offset": "UTC+00:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Ouagadougou",
+      "utc_offset": "UTC+00:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Porto-Novo",
+      "utc_offset": "UTC+01:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Sao_Tome",
+      "utc_offset": "UTC+00:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Tripoli",
+      "utc_offset": "UTC+02:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Tunis",
+      "utc_offset": "UTC+01:00",
+      "region": "Africa"
+    },
+    {
+      "name": "Africa/Windhoek",
+      "utc_offset": "UTC+02:00",
+      "region": "Africa"
+    },
+    {
+      "name": "America/Adak",
+      "utc_offset": "UTC-10:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Anchorage",
+      "utc_offset": "UTC-09:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Anguilla",
+      "utc_offset": "UTC-04:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Antigua",
+      "utc_offset": "UTC-04:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Araguaina",
+      "utc_offset": "UTC-03:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Argentina/Buenos_Aires",
+      "utc_offset": "UTC-03:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Argentina/Catamarca",
+      "utc_offset": "UTC-03:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Argentina/ComodRivadavia",
+      "utc_offset": "UTC-03:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Argentina/Cordoba",
+      "utc_offset": "UTC-03:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Argentina/Jujuy",
+      "utc_offset": "UTC-03:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Argentina/La_Rioja",
+      "utc_offset": "UTC-03:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Argentina/Mendoza",
+      "utc_offset": "UTC-03:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Argentina/Rio_Gallegos",
+      "utc_offset": "UTC-03:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Argentina/Salta",
+      "utc_offset": "UTC-03:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Argentina/San_Juan",
+      "utc_offset": "UTC-03:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Argentina/San_Luis",
+      "utc_offset": "UTC-03:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Argentina/Tucuman",
+      "utc_offset": "UTC-03:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Argentina/Ushuaia",
+      "utc_offset": "UTC-03:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Aruba",
+      "utc_offset": "UTC-04:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Asuncion",
+      "utc_offset": "UTC-04:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Atikokan",
+      "utc_offset": "UTC-05:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Bahia",
+      "utc_offset": "UTC-03:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Bahia_Banderas",
+      "utc_offset": "UTC-06:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Barbados",
+      "utc_offset": "UTC-04:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Belem",
+      "utc_offset": "UTC-03:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Belize",
+      "utc_offset": "UTC-06:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Blanc-Sablon",
+      "utc_offset": "UTC-04:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Boa_Vista",
+      "utc_offset": "UTC-04:00",
+      "region": "America"
+    },
+    {
+      "name": "America/Bogota",
+      "utc_offset": "UTC-05:00",
+      "region": "America"
+    }
+  ]
+}
