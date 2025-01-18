@@ -14,18 +14,71 @@ $accordion-button-active-icon-dark: $accordion-button-active-icon-dark
 @use 'highlight.js/styles/github-dark-dimmed.min.css';
 
 
+.btn-outline-rust {
+  border: 2px solid #C36241;
+  background-color: black;
+  color: #C36241;
+}
+
+.btn-outline-rust:hover {
+  background-color: #C36241;
+  color: black;
+}
+
+.btn-outline-php {
+  border: 2px solid #8892be;
+  background-color: black;
+  color: #8892be;
+}
+
+.btn-outline-php:hover {
+  background-color: #8892be;
+  color: black;
+}
+
+.btn-outline-python {
+  border: 2px solid #4584b6;
+  background-color: black;
+  color: #ffde57;
+
+  span {
+    color :#4584b6;
+  }
+}
+
+.btn-outline-python:hover {
+  background-color: #4584b6;
+  color: black;
+
+  span {
+    color: black;
+  }
+}
+
+.btn-outline-js {
+  border: 2px solid #F0DB4F;
+  background-color: black;
+  color: #F0DB4F;
+}
+
+.btn-outline-js:hover {
+  background-color: #F0DB4F;
+  color: black;
+}
+
+
 .feature-icon {
-    width: 4rem;
-    height: 4rem;
-    border-radius: .75rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: .75rem;
 }
 
 .icon-square {
-    width: 3rem;
-    height: 3rem;
-    border-radius: .75rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: .75rem;
 }
 
 .footer-text {
-    display: block;
+  display: block;
 }
