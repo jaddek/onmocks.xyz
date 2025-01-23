@@ -71,9 +71,9 @@ function encodeHTML(s) {
 
 function handleCopyPHPRequest(method, url) {
     return `<?php
-$url = 'https://onmocks.xyz/rest/api/countries';
+$url = 'https://onmocks.xyz${url}';
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, 'https://onmocks.xyz${url}');         
+curl_setopt($ch, CURLOPT_URL, $url);         
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, '${method}');
 $response = curl_exec($ch);
