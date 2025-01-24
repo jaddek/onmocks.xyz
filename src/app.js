@@ -86,8 +86,8 @@ function handleCopyPythonRequest(method, url) {
     return `
 import requests
 
-url = "https://onmocks.xyz"
-response = requests.${method}(${url})
+url = "https://onmocks.xyz${url}"
+response = requests.${method}(url)
 
 if response.status_code == 200:
     print("Response body:")
@@ -100,6 +100,9 @@ else:
 function handleCopyRustRequest(method, url) {
     return `
 use error_chain::error_chain;
+use reqwest::Client;
+use std::error::Error;
+use reqwest::Method;
 
 error_chain! {
     foreign_links {
@@ -109,13 +112,23 @@ error_chain! {
 }
 
 #[tokio::main]
-async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let res = reqwest::${method}("${url}").await?;
+async fn main() -> Result<(), Box<dyn Error>> {
+    let client = Client::new();
+    let domain = "https://onmocks.xyz";
+    // Dynamic HTTP method
+    let method = reqwest::Method::${method}; 
+    
+    // Combine domain and path dynamically
+    let url = format!("{}{}", domain, "${url}");  
+
+    let res = client.request(method, &url).await?;
+
     println!("Status: {}", res.status());
     println!("Headers:\\n{:#?}", res.headers());
 
     let body = res.text().await?;
     println!("Body:\\n{}", body);
+
     Ok(())
 }
 `
@@ -133,7 +146,7 @@ import (
 )
 
 func main() {
-	url := "https://onmocks.xyz/${url}"
+	url := "https://onmocks.xyz${url}"
 
 	data := map[string]string{
 		"key": "value",

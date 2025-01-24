@@ -17,6 +17,10 @@ $nav-pills-link-active-bg: $nav-pills-link-active-bg,
 
 @use 'highlight.js/styles/github-dark-dimmed.min.css';
 
+.fa-color {
+  color: $p-main-color!important;
+}
+
 .curl-promo {
   color: $p-console-color
 
