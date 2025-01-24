@@ -3,22 +3,24 @@ import bootstrap from 'bootstrap/dist/js/bootstrap.bundle'
 
 import './scss/main.scss'
 
-const jsonData = {
-        "employees": [
-            {
-                "id": 101,
-                "name": "Alice",
-                "position": "Software Engineer",
-                "description": "Over 3 years experience handling C# .NET"
-            },
-            {
-                "id": 102,
-                "name": "Bob",
-                "position": "Product Manager",
-                "description": "Has launched 3 successful projects"
-            },
-        ]
-    }
+const jsonData = [
+        {
+            "id": 123,
+            "uuid": "5a0c2789-c8b7-4ed4-8c4d-f14a9b204a9f",
+            "name": "Netherlands",
+            "code": "NL",
+            "capital": "Amsterdam",
+            "region": "Europe"
+        },
+        {
+            "id": 124,
+            "uuid": "544ca3ea-cb72-4e24-b9e0-0102ab325de1",
+            "name": "New Zealand",
+            "code": "NZ",
+            "capital": "Wellington",
+            "region": "Oceania"
+        },
+    ]
 ;
 const formattedJson = JSON.stringify(jsonData, null, 2);
 
