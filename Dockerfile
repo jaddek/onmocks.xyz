@@ -1,16 +1,19 @@
-FROM node:23-alpine AS builder
+FROM node:20-buster AS builder
 
-RUN apk add --no-cache \
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y \
     python3 \
     make \
     g++ \
     bash \
-    libc6-compat  # Adds compatibility with glibc if needed by native modules
+    libc6-dev \
+    && rm -rf /var/lib/apt/lists/*  # Clean up to reduce image size
 
-
-WORKDIR /app
 COPY package*.json ./
-RUN npm install
+
+RUN npm install --legacy-peer-deps  # --legacy-peer-deps to avoid peer dependency issues
+
 COPY . .
 RUN npm run build
 
