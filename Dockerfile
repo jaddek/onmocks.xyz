@@ -1,21 +1,22 @@
-FROM debian:bullseye-slim AS builder
-
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    wget \
-    curl \
-    gnupg \
-    ca-certificates \
-    && rm -rf /var/lib/apt/lists/*
-
+# Stage 1
+FROM node:23-bullseye-slim AS builder
 WORKDIR /app
-COPY . .
+RUN apt-get update && apt-get install -y \
+    python3 \
+    make \
+    g++ \
+    bash \
+    libc6-dev \
+    && rm -rf /var/lib/apt/lists/*  \
 
+COPY package*.json ./
 RUN npm install
+COPY . .
 
 RUN npm run build
 
-FROM nginx:alpine AS production
+# Stage 2
+FROM nginx:alpine3.20 AS production
 WORKDIR /usr/share/nginx/html
 RUN rm -rf /usr/share/nginx/html/*
 COPY --from=builder /app/dist /usr/share/nginx/html
