@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     g++ \
     bash \
     libc6-dev \
-    && rm -rf /var/lib/apt/lists/*  \
+    && rm -rf /var/lib/apt/lists/*
 
 COPY package*.json ./
 RUN npm install
