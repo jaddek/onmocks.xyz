@@ -1,4 +1,13 @@
-FROM node:22-buster AS builder
+FROM node:23-alpine AS builder
+
+RUN apk add --no-cache \
+    python3 \
+    make \
+    g++ \
+    bash \
+    libc6-compat  # Adds compatibility with glibc if needed by native modules
+
+
 WORKDIR /app
 COPY package*.json ./
 RUN npm install --production
