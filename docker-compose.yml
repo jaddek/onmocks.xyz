@@ -1,0 +1,8 @@
+services:
+    onmocks-xyz:
+        build: .
+        ports:
+            - "81:80"
+        environment:
+            - NODE_ENV=production
+        restart: always
