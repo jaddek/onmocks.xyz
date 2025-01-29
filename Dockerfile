@@ -8,15 +8,6 @@ RUN apt-get update && apt-get install -y \
     ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
-RUN wget http://ftp.gnu.org/gnu/libc/glibc-2.29.tar.gz \
-    && tar -xvf glibc-2.29.tar.gz \
-    && cd glibc-2.29 \
-    && mkdir build \
-    && cd build \
-    && ../configure --prefix=/usr \
-    && make -j$(nproc) \
-    && sudo make install
-
 WORKDIR /app
 COPY . .
 
