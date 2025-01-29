@@ -1,20 +1,27 @@
-FROM node:20-buster AS builder
-
-WORKDIR /app
+FROM debian:bullseye-slim AS builder
 
 RUN apt-get update && apt-get install -y \
-    python3 \
-    make \
-    g++ \
-    bash \
-    libc6-dev \
-    && rm -rf /var/lib/apt/lists/*  # Clean up to reduce image size
+    build-essential \
+    wget \
+    curl \
+    gnupg \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
 
-COPY package*.json ./
+RUN wget http://ftp.gnu.org/gnu/libc/glibc-2.29.tar.gz \
+    && tar -xvf glibc-2.29.tar.gz \
+    && cd glibc-2.29 \
+    && mkdir build \
+    && cd build \
+    && ../configure --prefix=/usr \
+    && make -j$(nproc) \
+    && sudo make install
 
-RUN npm install --legacy-peer-deps  # --legacy-peer-deps to avoid peer dependency issues
-
+WORKDIR /app
 COPY . .
+
+RUN npm install
+
 RUN npm run build
 
 FROM nginx:alpine AS production
