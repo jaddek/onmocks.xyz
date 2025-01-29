@@ -1,13 +1,7 @@
 {
   "name": "onmocks.xyz",
   "version": "1.0.0",
-  "source": "src/app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel serve src/index.html",
-    "build": "parcel build src/index.html",
-    "start": "serve dist"
-  },
+  "description": "A demo site for mocking APIs.",
   "keywords": [
     "mocking",
     "web",
@@ -15,7 +9,12 @@
   ],
   "author": "Your Name",
   "license": "MIT",
-  "description": "A demo site for mocking APIs.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel serve src/index.html",
+    "build": "parcel build src/index.html --dist-dir dist --public-url ./",
+    "start": "serve dist"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
     "@parcel/compressor-brotli": "^2.13.3",
@@ -29,11 +28,7 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.13.3",
-    "buffer": "^6.0.3",
-    "events": "^3.3.0",
-    "parcel": "^2.13.3",
-    "process": "^0.11.10",
-    "stream-browserify": "^3.0.0",
-    "util": "^0.12.5"
+    "@parcel/watcher": "^2.5.1",
+    "parcel": "^2.13.3"
   }
 }
