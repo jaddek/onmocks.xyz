@@ -28,7 +28,7 @@ jobs:
 
             -   name: Build Docker image
                 run: |
-                    docker build -t ${{ secrets.DOCKER_USERNAME }}/my-parcel-app:${{ github.sha }} .
+                    docker build -t onmocksxyz:${{ github.sha }} .
 
 #            -   name: Push Docker image
 #                run: |
